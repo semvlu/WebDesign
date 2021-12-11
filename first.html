@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <h1>This is the my first webpage</h1>
+            <h2>Test</h2>
+    </head>
+    <body>
+        <script src="Func.js"></script>
+        <script>
+            //window.alert("Welcome");
+        </script>
+        <p>Just printing some shit!</p>
+        <p>Again</p>
+        <p id = "demo">OH NO!!!</p>
+        <button type = "button" onclick="myFunc()">Try it</button>
+        <p id = "blank"></p>
+        <p id = "blank1"></p>
+        <p id = "blank2"></p>
+        <p id = "blank3"></p>
+        <p id = "image"></p>
+        <script>
+            let a,b,c;
+            a = 45, b = 7; c = a / b;
+            document.getElementById("blank").innerHTML = c + typeof 222;
+            document.getElementById("blank1").innerHTML = a * 4;
+            document.getElementById("blank2").innerHTML = typeof "This is a str";
+            const person = {
+                Fname: "Joe",
+                Lname: "Lindermann",
+                age: "21",
+                skin: "White"
+            };
+            document.getElementById("blank3").innerHTML = person.Fname + " " + person.Lname
+            + " " + person.skin + " " + person.age + "y/o";
+        </script>
+        <img src="GreyBeach.jpeg" style="width:399px;height:300px;">
+        <p>
+            <input type = "button" value="Print" onclick="window.print()" style="width:70px;height:20px;color: white;background-color: rgb(110, 49, 151);">
+        </p>
+        <style>
+        input{ background:#ccc; border-radius:6px;  border:1px solid #ccc; }
+        input:hover{background:red;}
+        </style>
+    </body>
+</html>
